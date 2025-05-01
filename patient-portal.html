@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Patient Portal - HealTrack Hospitals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/*** YOUR_KIT_CODE_HERE ***.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Simple styles for the portal content */
+        .portal-content {
+            background-color: var(--lighter-bg);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--box-shadow);
+            border: 1px solid var(--border-light);
+        }
+        .portal-section {
+            margin-bottom: var(--spacing-xl);
+            padding-bottom: var(--spacing-lg);
+            border-bottom: 1px solid var(--border-light);
+        }
+        .portal-section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .portal-section h2 {
+            color: var(--primary-dark);
+            font-size: 1.6rem;
+            margin-bottom: var(--spacing-md);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+        .portal-section h2 i { font-size: 0.9em; }
+        .patient-details p, .doctor-details p { margin-bottom: var(--spacing-sm); }
+        .patient-details strong, .doctor-details strong { font-weight: 600; color: var(--secondary-dark); }
+
+        .records-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: var(--spacing-md);
+        }
+        .records-table th, .records-table td {
+            border: 1px solid var(--border-color);
+            padding: var(--spacing-sm) var(--spacing-md);
+            text-align: left;
+            vertical-align: top;
+        }
+        .records-table th {
+            background-color: var(--light-bg);
+            font-weight: 600;
+        }
+        .records-table tbody tr:nth-child(odd) {
+             background-color: var(--lighter-bg);
+        }
+        .records-table tbody tr:hover {
+             background-color: #e9ecef; /* Light hover */
+        }
+        .logout-button {
+            margin-top: var(--spacing-lg);
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><i class="fas fa-heartbeat"></i> HealTrack Hospitals</a>
+            <!-- Optional: Simplified Nav for logged-in state -->
+            <nav>
+                 <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="appointment.html">Appointments</a></li>
+                    <li><a href="doctors.html">Find a Doctor</a></li>
+                    <li><button id="logout-button-nav" class="btn btn-outline-primary btn-small">Logout</button></li>
+                 </ul>
+             </nav>
+         </div>
+    </header>
+
+    <main class="container page-padding">
+        <h1 class="page-title"><i class="fas fa-user-circle"></i> Your Patient Portal</h1>
+
+        <div id="portal-loading" style="text-align: center; padding: 2rem;">
+             <p><i class="fas fa-spinner fa-spin"></i> Loading your portal data...</p>
+         </div>
+
+        <div id="portal-main-content" class="portal-content fade-in-element" style="display: none;">
+            <!-- Content will be populated by script.js -->
+             <div id="welcome-message" class="portal-section">
+                <!-- e.g., <h2>Welcome, [Patient Name]!</h2> -->
+            </div>
+
+            <div class="portal-section patient-details">
+                <h2><i class="fas fa-id-card"></i> Your Details</h2>
+                <p><strong>Name:</strong> <span id="patient-name"></span></p>
+                <p><strong>Date of Birth:</strong> <span id="patient-dob"></span></p>
+                <p><strong>Email (Username):</strong> <span id="patient-email"></span></p>
+                <p><strong>Phone:</strong> <span id="patient-phone"></span></p>
+            </div>
+
+            <div class="portal-section doctor-details">
+                <h2><i class="fas fa-user-md"></i> Your Assigned Doctor</h2>
+                <p><strong>Doctor:</strong> <span id="assigned-doctor-name">N/A</span></p>
+                <p><strong>Specialty:</strong> <span id="assigned-doctor-specialty">N/A</span></p>
+                <p><small>For appointments or questions, please <a href="contact.html">contact us</a> or <a href="appointment.html">schedule online</a>.</small></p>
+            </div>
+
+            <div class="portal-section health-records">
+                <h2><i class="fas fa-notes-medical"></i> Recent Health Records</h2>
+                <div id="records-container">
+                    <p>No records found.</p> <!-- Default message -->
+                    <!-- Table will be inserted here by JS -->
+                </div>
+                 <p style="margin-top: 1rem;"><small><strong>Disclaimer:</strong> This portal provides access to parts of your health record. It may not include all information. For complete records or urgent matters, contact your provider's office.</small></p>
+            </div>
+
+            <div class="logout-button">
+                <button id="logout-button-main" class="btn btn-secondary"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <!-- Simplified Footer or standard footer -->
+            <div class="footer-info">
+                © 2024 HealTrack Hospitals. All rights reserved.
+            </div>
+            <div class="footer-legal">
+                 <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="contact.html">Contact Support</a>
+            </div>
+        </div>
+    </footer>
+
+     <!-- No Chatbot needed on internal portal page typically -->
+
+    <script src="script.js"></script>
+</body>
+</html>

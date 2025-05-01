@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About HealTrack Hospitals - Integrated Healthcare Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- *** ADD FONT AWESOME KIT HERE *** -->
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+         <div class="container">
+            <a href="index.html" class="logo"><i class="fas fa-heartbeat"></i> HealTrack Hospitals</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="services.html">Platform Services</a></li>
+                    <li><a href="doctors.html">Find a Doctor</a></li>
+                    <li><a href="appointment.html">Appointments</a></li>
+                    <li><a href="patient-portal-login.html">Patient Portal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-padding">
+        <h1 class="page-title"><i class="fas fa-info-circle"></i> About HealTrack Hospitals</h1>
+
+        <section id="overview" class="styled-section fade-in-element">
+            <h2 class="section-title">Our Mission: Connected & Compassionate Care</h2>
+            <p><strong>Mission:</strong> To revolutionize healthcare delivery by leveraging smart technology, creating a seamless, efficient, and accessible experience that connects patients with compassionate, high-quality care.</p>
+            <p><strong>Vision:</strong> To be the leading digital healthcare platform, empowering patients and providers with integrated tools for better health management and outcomes.</p>
+            <p><strong>Values:</strong> Innovation, Accessibility, Security, Compassion, Excellence, Integrity.</p>
+        </section>
+
+        <section id="the-platform" class="fade-in-element">
+             <h2 class="section-title">The HealTrack Digital Platform</h2>
+             <p>HealTrack Hospitals is more than just a medical facility; it's an advanced <strong>digital healthcare management system</strong>. We've built a comprehensive platform designed to streamline every aspect of your health journey.</p>
+             <p>From booking appointments and consulting doctors remotely via <strong>telemedicine</strong>, to securely managing your <strong>Electronic Health Records (EHR)</strong> through our intuitive <strong>Patient Portal</strong>, our goal is to make healthcare simpler, smarter, and more connected. We focus on reducing administrative burdens, enhancing doctor-patient communication, and providing you with the tools you need to actively participate in your care.</p>
+             <p>Our platform integrates various services, ensuring that whether you need to <a href="doctors.html">find a specialist <i class="fas fa-external-link-alt fa-xs"></i></a>, <a href="appointment.html">schedule a visit <i class="fas fa-external-link-alt fa-xs"></i></a>, access <a href="insurance.html">billing information <i class="fas fa-external-link-alt fa-xs"></i></a>, or read <a href="blog.html">health articles <i class="fas fa-external-link-alt fa-xs"></i></a>, it's all easily accessible.</p>
+        </section>
+
+        <section id="history" class="styled-section fade-in-element">
+            <h2 class="section-title">History & Milestones</h2>
+            <p>Founded with a vision to integrate cutting-edge technology into patient care, HealTrack Hospitals began its journey in 2025. Our commitment has always been to provide modern healthcare solutions. Key milestones include the launch of our integrated EHR system in 2025, the introduction of telemedicine services in 2025, and the continuous development of our user-friendly patient portal.</p>
+        </section>
+
+        <section id="leadership" class="fade-in-element">
+            <h2 class="section-title">Leadership Team</h2>
+            <p>Our team comprises experienced healthcare professionals and technology experts dedicated to improving patient outcomes and experiences through the HealTrack platform.</p>
+            <ul class="leadership-list">
+                <li><i class="fas fa-user-tie list-icon"></i> <strong>Dr. Jane Doe, MD</strong> - Chief Medical Officer (CMO)</li>
+                <li><i class="fas fa-user-tie list-icon"></i> <strong>Dr. Marcus Jones, MD</strong> - Chief of Surgical Services</li>
+                <li><i class="fas fa-user-tie list-icon"></i> <strong>Dr. Chen Wang, MD</strong> - Chief of Oncology Department</li>
+                <li><i class="fas fa-user-tie list-icon"></i> <strong>Dr. Anita Lee, MD</strong> - Chief of Pediatrics Department</li>
+            </ul>
+        </section>
+
+    </main>
+
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="insurance.html">Insurance/Billing</a> |
+            <a href="blog.html">Health Blog</a> |
+            <a href="faq.html">FAQ</a> |
+            <a href="emergency-info.html">Emergency Info</a> |
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-info">
+            © 2024 HealTrack Hospitals. All rights reserved.
+        </div>
+        <div class="footer-legal">
+             <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+     <!-- Chatbot Structure -->
+     <div id="chatbot-container">
+        <button id="chatbot-toggle" aria-label="Toggle Chatbot"></button>
+        <div id="chatbot-window" class="hidden">
+            <div id="chatbot-header">HealTrack Assistant</div>
+            <div id="chatbot-messages">
+                 <div class="bot-message">Hello! How can I help you find information about HealTrack?</div>
+            </div>
+            <div id="chatbot-input">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button id="send-button" aria-label="Send Message"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surgery Education & Demos - HealTrack Hospitals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/*** YOUR_KIT_CODE_HERE ***.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><i class="fas fa-heartbeat"></i> HealTrack Hospitals</a>
+            <nav>
+                 <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Platform Services</a></li>
+                    <li><a href="doctors.html">Find a Doctor</a></li>
+                    <li><a href="appointment.html">Appointments</a></li>
+                    <li><a href="patient-portal-login.html">Patient Portal</a></li>
+                 </ul>
+             </nav>
+         </div>
+    </header>
+
+    <main class="container page-padding">
+         <div class="section-header text-center fade-in-element">
+            <i class="fas fa-film section-icon"></i> <!-- Or fa-vr-cardboard -->
+             <h1 class="page-title">Surgical Procedure Education</h1>
+             <p class="lead-text">Learn about common surgical procedures. Understand what to expect before, during, and after your treatment to feel more prepared and reduce anxiety.</p>
+         </div>
+
+         <!-- Surgery Selection Area -->
+         <section class="surgery-selection results-grid fade-in-element">
+             <!-- Card for each common surgery - links to sections below -->
+             <a href="#knee-replacement" class="surgery-select-card card-style smooth-scroll-link">
+                 <i class="fas fa-bone card-icon"></i>
+                 <h3>Knee Replacement</h3>
+                 <p>Learn about total knee arthroplasty.</p>
+             </a>
+             <a href="#appendectomy" class="surgery-select-card card-style smooth-scroll-link">
+                <i class="fas fa-notes-medical card-icon"></i>
+                 <h3>Appendectomy</h3>
+                 <p>Understand appendix removal surgery.</p>
+             </a>
+             <a href="#gallbladder-removal" class="surgery-select-card card-style smooth-scroll-link">
+                <i class="fas fa-prescription-bottle card-icon"></i>
+                <h3>Gallbladder Removal</h3>
+                 <p>Details on cholecystectomy.</p>
+             </a>
+              <a href="#hernia-repair" class="surgery-select-card card-style smooth-scroll-link">
+                <i class="fas fa-user-shield card-icon"></i>
+                 <h3>Hernia Repair</h3>
+                 <p>Information on inguinal hernia surgery.</p>
+             </a>
+             <!-- Add more surgery cards as needed -->
+         </section>
+
+         <hr class="section-divider"> <!-- Visual Separator -->
+
+         <!-- === Detailed Section for Each Surgery === -->
+
+         <!-- 1. Knee Replacement Example -->
+         <section id="knee-replacement" class="surgery-detail-section fade-in-element">
+             <h2 class="section-title"><i class="fas fa-bone icon-prefix"></i>Total Knee Replacement (Arthroplasty)</h2>
+
+            <div class="detail-grid">
+                 <!-- Left Column: Video/Animation & Explanation -->
+                 <div class="detail-column">
+                    <h3>Procedure Overview</h3>
+                     <p>Replacing damaged knee joint surfaces with artificial components (implants) made of metal and plastic to relieve pain caused by arthritis and restore function.</p>
+
+                     <h4><i class="fas fa-video"></i> Animation / Visual Guide</h4>
+                     <!-- *** VIDEO EMBED ADDED *** -->
+                    <div class="video-placeholder" style="padding:0; background:none; box-shadow: none; border: none;"> <!-- Adjusted style for iframe -->
+                         <iframe width="100%" height="315" src="https://www.youtube.com/embed/l4tw71F-f0c"></iframe>
+                    </div>
+                   
+                    <h4><i class="fas fa-user-md"></i> Surgeon's Explanation</h4>
+                    <div class="surgeon-explanation">
+                         <img src="images/doctor-placeholder-generic.png" alt="Doctor explaining" class="surgeon-photo"> <!-- Placeholder -->
+                         <div>
+                             <blockquote>"In this procedure, we carefully remove the worn cartilage and bone ends, precisely shaping the bone to fit the new metal and plastic components. This restores the joint's smooth surface."</blockquote>
+                             <cite>- Dr. Emily Carter (Orthopedic Surgeon)</cite>
+                         </div>
+                     </div>
+                 </div>
+
+                 <!-- Right Column: Key Info, FAQs, Resources -->
+                 <div class="detail-column">
+                    <h3>Key Information</h3>
+                     <ul class="key-info-list">
+                         <li><i class="fas fa-question-circle"></i> <strong>Why it's done:</strong> Severe arthritis pain (osteoarthritis, rheumatoid), joint damage, significantly limited mobility unresponsive to conservative treatments.</li>
+                         <li><i class="fas fa-user-clock"></i> <strong>Duration:</strong> Typically 1-2 hours surgery time.</li>
+                         <li><i class="fas fa-hospital"></i> <strong>Hospital Stay:</strong> Usually 1-3 days, depending on recovery progress.</li>
+                         <li><i class="fas fa-walking"></i> <strong>Recovery:</strong> Requires dedicated physical therapy starting soon after surgery; significant recovery over 3-6 months, full recovery can take up to a year.</li>
+                         <li><i class="fas fa-exclamation-triangle"></i> <strong>Risks:</strong> Include infection, blood clots, implant loosening or wear, nerve injury, stiffness. (Discuss all specifics with your surgeon).</li>
+                     </ul>
+
+                    <h4><i class="far fa-question-circle"></i> Common Questions</h4>
+                    <div class="faq-container-surgery"> <!-- Container for FAQs within surgery -->
+                         <div class="faq-item">
+                             <button class="faq-question"><i class="fas fa-thermometer-half faq-icon"></i> How painful is the recovery?</button>
+                            <div class="faq-answer"><p>Pain is expected initially but is actively managed with medication (oral, sometimes nerve blocks). Pain typically decreases significantly within weeks as you heal and participate in therapy.</p></div>
+                         </div>
+                        <div class="faq-item">
+                            <button class="faq-question"><i class="fas fa-running faq-icon"></i> When can I return to activities?</button>
+                             <div class="faq-answer"><p>Walking starts soon after surgery. Driving may resume in 4-6 weeks. Return to low-impact activities (swimming, cycling) often occurs within 2-3 months. Higher-impact activities depend on individual progress and surgeon's advice, typically 6+ months.</p></div>
+                         </div>
+                         <!-- Add more FAQs -->
+                     </div>
+
+                     <h4><i class="fas fa-book-medical"></i> Patient Resources</h4>
+                    <a href="downloads/knee-replacement-prep-guide.pdf" class="btn btn-secondary" download>
+                         <i class="fas fa-download"></i> Download Prep Guide (PDF)
+                     </a>
+                     <a href="[link-to-physical-therapy-info]" class="btn btn-secondary" style="margin-left: 10px;">
+                          <i class="fas fa-dumbbell"></i> Physical Therapy Info
+                     </a>
+                 </div>
+            </div>
+        </section>
+
+         <hr class="section-divider">
+
+        <!-- 2. Appendectomy Example -->
+         <section id="appendectomy" class="surgery-detail-section fade-in-element">
+            <h2 class="section-title"><i class="fas fa-notes-medical icon-prefix"></i>Appendectomy (Appendix Removal)</h2>
+            <div class="detail-grid">
+                 <div class="detail-column"> <!-- Left Column -->
+                    <h3>Procedure Overview</h3>
+                    <p>Surgical removal of the appendix, a small pouch attached to the large intestine. Usually performed urgently to treat appendicitis (inflammation/infection of the appendix).</p>
+                     <h4><i class="fas fa-video"></i> Visual Guide (Laparoscopic)</h4>
+                      <!-- *** VIDEO EMBED ADDED *** -->
+                     <div class="video-placeholder" style="padding:0; background:none; box-shadow: none; border: none;">
+                         <iframe width="100%" height="315" src="https://www.youtube.com/embed/RF4UhfC6ISw?si=W64vYn5FqV4nC9q5" title="YouTube video player - Laparoscopic Appendectomy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: var(--border-radius); aspect-ratio: 16 / 9;"></iframe>
+                     </div>
+                     <h4><i class="fas fa-user-md"></i> Surgeon's Explanation</h4>
+                     <div class="surgeon-explanation">
+                        <img src="images/doctor-placeholder-generic-2.png" alt="Doctor explaining" class="surgeon-photo"> <!-- Placeholder -->
+                        <blockquote>"We typically make 2-3 small incisions in the abdomen, insert a camera and specialized instruments, detach the appendix, and remove it through one of the incisions. It's generally a quick procedure."</blockquote>
+                        <cite>- Dr. Kenji Tanaka (General Surgeon)</cite>
+                    </div>
+                 </div>
+                <div class="detail-column"> <!-- Right Column -->
+                    <h3>Key Information</h3>
+                     <ul class="key-info-list">
+                         <li><i class="fas fa-first-aid"></i> <strong>Why it's done:</strong> Appendicitis, to prevent rupture and widespread infection (peritonitis).</li>
+                         <li><i class="fas fa-user-clock"></i> <strong>Duration:</strong> Around 30-60 minutes for uncomplicated laparoscopic cases.</li>
+                         <li><i class="fas fa-hospital"></i> <strong>Hospital Stay:</strong> Often 1 day (or even same day discharge); longer if the appendix has ruptured.</li>
+                         <li><i class="fas fa-running"></i> <strong>Recovery:</strong> Gradual return to normal activities over 1-3 weeks. Avoid heavy lifting for several weeks.</li>
+                          <li><i class="fas fa-exclamation-triangle"></i> <strong>Risks:</strong> Include wound infection, intra-abdominal abscess (collection of pus), bleeding. Open surgery may be needed if laparoscopic is not feasible or safe.</li>
+                     </ul>
+                     <h4><i class="far fa-question-circle"></i> Common Questions</h4>
+                    <div class="faq-container-surgery">
+                        <div class="faq-item">
+                            <button class="faq-question"><i class="fas fa-ambulance faq-icon"></i> Is it always an emergency?</button>
+                            <div class="faq-answer"><p>Appendicitis requires prompt medical evaluation and usually urgent surgery to prevent the appendix from rupturing, which is a more serious condition.</p></div>
+                         </div>
+                         <div class="faq-item">
+                            <button class="faq-question"><i class="fas fa-utensils faq-icon"></i> Are there diet restrictions after?</button>
+                            <div class="faq-answer"><p>Usually, you can resume a normal diet gradually as tolerated after surgery. Start with clear liquids and advance slowly.</p></div>
+                         </div>
+                         <!-- More FAQs -->
+                     </div>
+                     <h4><i class="fas fa-book-medical"></i> Patient Resources</h4>
+                     <a href="downloads/appendectomy-recovery-info.pdf" class="btn btn-secondary" download>
+                         <i class="fas fa-download"></i> Recovery Information (PDF)
+                     </a>
+                 </div>
+             </div>
+         </section>
+
+          <hr class="section-divider">
+
+          <!-- 3. Gallbladder Removal Example -->
+         <section id="gallbladder-removal" class="surgery-detail-section fade-in-element">
+            <h2 class="section-title"><i class="fas fa-prescription-bottle icon-prefix"></i>Cholecystectomy (Gallbladder Removal)</h2>
+            <div class="detail-grid">
+                <div class="detail-column"> <!-- Left Column -->
+                    <h3>Procedure Overview</h3>
+                    <p>Surgical removal of the gallbladder, a small organ under the liver that stores bile. Most often performed due to gallstones causing pain (biliary colic) or inflammation (cholecystitis).</p>
+                     <h4><i class="fas fa-video"></i> Visual Guide (Laparoscopic)</h4>
+                      <!-- *** VIDEO EMBED ADDED *** -->
+                      <div class="video-placeholder" style="padding:0; background:none; box-shadow: none; border: none;">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/zFYZUUPG4_8?si=hXq5Lp4lKj-C-PjW" title="YouTube video player - Gallbladder Removal Surgery" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: var(--border-radius); aspect-ratio: 16 / 9;"></iframe>
+                     </div>
+                    <h4><i class="fas fa-user-md"></i> Surgeon's Explanation</h4>
+                    <div class="surgeon-explanation">
+                         <img src="images/doctor-placeholder-generic-3.png" alt="Doctor explaining" class="surgeon-photo"> <!-- Placeholder -->
+                         <blockquote>"Through small abdominal incisions, we use a camera and tools to carefully dissect and remove the gallbladder. Bile will still flow directly from the liver to the intestine."</blockquote>
+                         <cite>- Dr. Sarah Chen (General Surgeon)</cite>
+                     </div>
+                 </div>
+                <div class="detail-column"> <!-- Right Column -->
+                    <h3>Key Information</h3>
+                     <ul class="key-info-list">
+                         <li><i class="fas fa-pills"></i> <strong>Why it's done:</strong> Symptomatic gallstones, gallbladder inflammation (cholecystitis), polyps, pancreatitis related to gallstones.</li>
+                          <li><i class="fas fa-user-clock"></i> <strong>Duration:</strong> Typically 45-90 minutes.</li>
+                         <li><i class="fas fa-hospital"></i> <strong>Hospital Stay:</strong> Often performed as an outpatient (same-day) procedure or may require an overnight stay.</li>
+                         <li><i class="fas fa-utensils"></i> <strong>Recovery:</strong> Return to light activity within a few days to a week. Normal diet usually resumed quickly, though some may initially need to moderate fatty foods.</li>
+                          <li><i class="fas fa-exclamation-triangle"></i> <strong>Risks:</strong> Include injury to the bile duct, bleeding, infection, hernia at incision sites, post-cholecystectomy syndrome (rare).</li>
+                    </ul>
+                     <h4><i class="far fa-question-circle"></i> Common Questions</h4>
+                     <div class="faq-container-surgery">
+                         <div class="faq-item">
+                            <button class="faq-question"><i class="fas fa-question faq-icon"></i> Can I live normally without a gallbladder?</button>
+                            <div class="faq-answer"><p>Yes, absolutely. The gallbladder primarily stores bile made by the liver. Without it, bile flows directly into the small intestine. Most people adapt well and don't notice significant long-term digestive changes.</p></div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question"><i class="fas fa-heartbeat faq-icon"></i> What is 'gas pain' after surgery?</button>
+                            <div class="faq-answer"><p>During laparoscopy, CO2 gas is used to inflate the abdomen for better visualization. Some residual gas can irritate nerves causing shoulder or chest discomfort for a day or two. Walking helps dissipate the gas.</p></div>
+                         </div>
+                        <!-- More FAQs -->
+                     </div>
+                     <h4><i class="fas fa-book-medical"></i> Patient Resources</h4>
+                     <a href="downloads/gallbladder-surgery-guide.pdf" class="btn btn-secondary" download>
+                         <i class="fas fa-download"></i> Gallbladder Guide (PDF)
+                     </a>
+                </div>
+             </div>
+        </section>
+
+         <hr class="section-divider">
+
+         <!-- 4. Hernia Repair Example -->
+        <section id="hernia-repair" class="surgery-detail-section fade-in-element">
+            <h2 class="section-title"><i class="fas fa-user-shield icon-prefix"></i>Inguinal Hernia Repair</h2>
+             <div class="detail-grid">
+                <div class="detail-column"> <!-- Left Column -->
+                    <h3>Procedure Overview</h3>
+                    <p>Surgical correction of an inguinal hernia, where tissue (like part of the intestine) protrudes through a weak spot in the abdominal muscles in the groin area. Usually involves pushing the tissue back and reinforcing the weak area, often with surgical mesh.</p>
+                    <h4><i class="fas fa-video"></i> Visual Guide (Laparoscopic)</h4>
+                     <!-- *** VIDEO EMBED ADDED *** -->
+                     <div class="video-placeholder" style="padding:0; background:none; box-shadow: none; border: none;">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/j4F0E-G4MAQ?si=7_q4-T_r-V1z8n9G" title="YouTube video player - Laparoscopic Inguinal Hernia Repair" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: var(--border-radius); aspect-ratio: 16 / 9;"></iframe>
+                     </div>
+                    <h4><i class="fas fa-user-md"></i> Surgeon's Explanation</h4>
+                     <div class="surgeon-explanation">
+                        <img src="images/doctor-placeholder-generic-4.png" alt="Doctor explaining" class="surgeon-photo"> <!-- Placeholder -->
+                        <blockquote>"Whether open or laparoscopic, the goal is to return the protruding tissue to the abdomen and strengthen the abdominal wall, typically using a mesh patch to prevent recurrence."</blockquote>
+                        <cite>- Dr. David Miller (General Surgeon)</cite>
+                    </div>
+                </div>
+                <div class="detail-column"> <!-- Right Column -->
+                    <h3>Key Information</h3>
+                    <ul class="key-info-list">
+                        <li><i class="fas fa-procedures"></i> <strong>Why it's done:</strong> Symptomatic hernia (pain, bulge), risk of strangulation (trapped tissue losing blood supply - an emergency).</li>
+                        <li><i class="fas fa-user-clock"></i> <strong>Duration:</strong> Around 30-90 minutes, depending on technique and complexity.</li>
+                         <li><i class="fas fa-hospital"></i> <strong>Hospital Stay:</strong> Usually outpatient (same-day surgery).</li>
+                         <li><i class="fas fa-dumbbell"></i> <strong>Recovery:</strong> Return to light activities in 1-2 weeks. Avoid strenuous activity and heavy lifting for 4-6 weeks as advised by your surgeon.</li>
+                         <li><i class="fas fa-exclamation-triangle"></i> <strong>Risks:</strong> Include pain (sometimes chronic), infection, bleeding, hernia recurrence, injury to nearby structures (nerves, blood vessels, vas deferens).</li>
+                    </ul>
+                    <h4><i class="far fa-question-circle"></i> Common Questions</h4>
+                     <div class="faq-container-surgery">
+                         <div class="faq-item">
+                             <button class="faq-question"><i class="fas fa-weight-hanging faq-icon"></i> When can I lift heavy things?</button>
+                             <div class="faq-answer"><p>Follow your surgeon's specific instructions. Generally, avoid lifting anything over 10-15 lbs for the first few weeks, gradually increasing as healing progresses, typically resuming normal lifting after 4-6 weeks or longer.</p></div>
+                        </div>
+                         <div class="faq-item">
+                            <button class="faq-question"><i class="fas fa-shield-alt faq-icon"></i> What is surgical mesh?</button>
+                            <div class="faq-answer"><p>It's a synthetic material used to reinforce the weakened abdominal wall, acting like scaffolding for new tissue growth, which helps reduce the chance of the hernia coming back.</p></div>
+                         </div>
+                         <!-- More FAQs -->
+                     </div>
+                    <h4><i class="fas fa-book-medical"></i> Patient Resources</h4>
+                     <a href="downloads/hernia-repair-guide.pdf" class="btn btn-secondary" download><i class="fas fa-download"></i> Hernia Guide (PDF)</a>
+                 </div>
+             </div>
+         </section>
+
+
+         <!-- General Anxiety Reduction / Myth vs Fact -->
+         <section class="anxiety-reduction styled-section fade-in-element">
+            <i class="fas fa-hand-holding-heart section-icon-small"></i>
+             <h2 class="section-title">Feeling Anxious? Let's Clarify Common Concerns</h2>
+            <div class="myth-vs-fact">
+                <p><strong>Myth:</strong> "Surgery is always extremely painful."<br>
+                <strong>Fact:</strong> Modern anesthesia and pain management techniques significantly control discomfort. Our team works proactively to keep you comfortable during and after your procedure.</p>
+             </div>
+             <div class="myth-vs-fact">
+                 <p><strong>Myth:</strong> "I might wake up during the operation."<br>
+                 <strong>Fact:</strong> Anesthesia is administered and closely monitored by highly trained specialists (anesthesiologists or nurse anesthetists) throughout your surgery to ensure you remain safely asleep and unaware.</p>
+            </div>
+            <div class="myth-vs-fact">
+                 <p><strong>Myth:</strong> "Recovery means being stuck in bed for weeks."<br>
+                 <strong>Fact:</strong> For many surgeries, early mobilization (getting up and walking) is encouraged to speed recovery, improve circulation, and prevent complications like blood clots. Your care team will provide specific guidance.</p>
+            </div>
+             <p class="communication-note"><i class="fas fa-comments"></i> <strong>Remember:</strong> Open communication with your surgeon and care team is vital. Write down your questions and bring them to your appointments. We are here to help you feel informed and confident about your care.</p>
+         </section>
+
+     </main>
+
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="insurance.html">Insurance/Billing</a> |
+            <a href="blog.html">Health Blog</a> |
+            <a href="faq.html">FAQ</a> |
+            <a href="emergency-info.html">Emergency Info</a> |
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-info">
+            © 2024 HealTrack Hospitals. All rights reserved.
+        </div>
+        <div class="footer-legal">
+             <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+      <!-- Chatbot (Optional, context could be about surgery prep) -->
+     <div id="chatbot-container">
+        <button id="chatbot-toggle" aria-label="Toggle Chatbot"></button>
+        <div id="chatbot-window" class="hidden">
+            <div id="chatbot-header">HealTrack Assistant</div>
+            <div id="chatbot-messages">
+                 <div class="bot-message">Learning about a surgery? Ask about recovery times, risks, or specific procedures like knee replacement or appendectomy.</div>
+            </div>
+            <div id="chatbot-input">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button id="send-button" aria-label="Send Message"></button>
+            </div>
+        </div>
+    </div>
+
+     <script src="script.js"></script>
+ </body>
+ </html>

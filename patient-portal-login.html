@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Portal Login - HealTrack Hospitals</title> <!-- UPDATED TITLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/*** YOUR_KIT_CODE_HERE ***.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><i class="fas fa-heartbeat"></i> HealTrack Hospitals</a>
+            <nav>
+                 <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Platform Services</a></li>
+                    <li><a href="doctors.html">Find a Doctor</a></li>
+                    <li><a href="appointment.html">Appointments</a></li>
+                    <li><a href="patient-portal-login.html" class="active">Patient Portal</a></li>
+                 </ul>
+             </nav>
+         </div>
+    </header>
+
+    <main class="container page-padding">
+
+        <section id="portal-introduction" class="portal-intro fade-in-element">
+            <h1 class="page-title"><i class="fas fa-laptop-medical"></i> Your Secure Health Hub</h1>
+            <p class="lead-text">Access your health information and manage your care securely online, 24/7.</p>
+             <ul class="portal-features-list">
+                 <li><i class="fas fa-notes-medical list-icon"></i> View Electronic Health Records (EHR)</li>
+                 <li><i class="fas fa-vial list-icon"></i> Check Lab Results & Imaging Reports</li>
+                 <li><i class="fas fa-calendar-check list-icon"></i> View & Manage Upcoming Appointments</li>
+                 <li><i class="fas fa-prescription list-icon"></i> Request Prescription Refills*</li>
+                 <li><i class="fas fa-comments list-icon"></i> Securely Message Your Doctor's Office*</li>
+                 <li><i class="fas fa-dollar-sign list-icon"></i> Pay Your Bills Online*</li>
+                 <li><i class="fas fa-user-edit list-icon"></i> Update Personal & Insurance Info</li>
+             </ul>
+             <p><small>*Availability of certain features may vary based on your provider and clinic setup.</small></p>
+             <p class="security-note"><i class="fas fa-lock"></i> <strong>Security is our priority.</strong> Your data is protected using industry-standard encryption and secure authentication methods. (Note: This demo uses insecure local storage for simplicity).</p>
+         </section>
+
+        <section id="login-form-section" class="portal-forms fade-in-element">
+             <h2 class="form-title"><i class="fas fa-sign-in-alt"></i> Secure Patient Login</h2>
+              <!-- *** ADDED LOGIN MESSAGE AREA *** -->
+              <div id="login-message" class="form-message" style="display: none; margin-bottom: 1rem; padding: 1rem; border-radius: var(--border-radius); text-align: center; background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb;"></div>
+             <!-- Ensure form has id, method, needs-validation, and novalidate -->
+             <form id="login-form" action="#" method="post" class="needs-validation" novalidate> <!-- Backend action needed -->
+                <div class="form-group">
+                    <label for="login-username"><i class="fas fa-user form-icon"></i> Username (Email):</label> <!-- UPDATED LABEL -->
+                    <input type="email" id="login-username" name="username" required autocomplete="username" placeholder="Enter your portal email"> <!-- Changed type to email -->
+                    <div class="invalid-feedback">Please enter your username (email).</div>
+                </div>
+                <div class="form-group">
+                    <label for="login-password"><i class="fas fa-key form-icon"></i> Password:</label>
+                    <input type="password" id="login-password" name="password" required autocomplete="current-password" placeholder="Enter your password">
+                    <div class="invalid-feedback">Please enter your password.</div>
+                </div>
+                <div class="form-group form-options">
+                     <div class="form-check"> <!-- Optional Remember Me -->
+                         <input type="checkbox" id="remember-me" name="remember_me" class="form-check-input">
+                         <label for="remember-me" class="form-check-label">Remember Me</label>
+                     </div>
+                     <div>
+                        <!-- *** UPDATED FORGOT PASSWORD LINK *** -->
+                        <a href="#" id="forgot-password-link" class="form-links">Forgot Password?</a>
+                     </div>
+                </div>
+                <button type="submit" class="btn btn-accent btn-lg" style="width: 100%;"><i class="fas fa-sign-in-alt"></i> Login to Portal</button>
+                <!-- *** REMOVED FORGOT USERNAME (using email now) *** -->
+            </form>
+        </section>
+
+        <section id="signup-prompt" class="portal-forms secondary-box fade-in-element">
+            <h2><i class="fas fa-question-circle"></i> Need Portal Access or Help?</h2>
+            <!-- *** UPDATED SIGNUP LINK *** -->
+            <p><strong>New Patients / No Account Yet?</strong> Click here to create your secure portal account:
+                 <a href="registration.html" class="btn btn-primary btn-small" style="margin-left: 10px;">Register Now <i class="fas fa-user-plus"></i></a>
+             </p>
+             <p class="form-links" style="margin-top: 1rem;"><strong>Login Issues or Forgot Password?</strong> Click the "Forgot Password?" link above or contact Portal Technical Support at <strong>[Portal Support Number/Email]</strong>. You can also check our <a href="faq.html#portal-records-faqs">Portal FAQ page <i class="fas fa-external-link-alt fa-xs"></i></a>.</p>
+        </section>
+    </main>
+
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="insurance.html">Insurance/Billing</a> |
+            <a href="blog.html">Health Blog</a> |
+            <a href="faq.html">FAQ</a> |
+            <a href="emergency-info.html">Emergency Info</a> |
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-info">
+            © 2024 HealTrack Hospitals. All rights reserved.
+        </div>
+        <div class="footer-legal">
+             <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+     <!-- Chatbot Structure -->
+     <div id="chatbot-container">
+        <button id="chatbot-toggle" aria-label="Toggle Chatbot"></button>
+        <div id="chatbot-window" class="hidden">
+            <div id="chatbot-header">HealTrack Assistant</div>
+            <div id="chatbot-messages">
+                 <div class="bot-message">Welcome to the Patient Portal login! Need help signing up, logging in, or resetting your password?</div> <!-- UPDATED PROMPT -->
+            </div>
+            <div id="chatbot-input">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button id="send-button" aria-label="Send Message"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to the main script file -->
+    <script src="script.js"></script>
+
+ </body>
+ </html>

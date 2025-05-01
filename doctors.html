@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Doctor - HealTrack Hospitals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- *** ADD FONT AWESOME KIT HERE *** -->
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <header>
+         <div class="container">
+             <a href="index.html" class="logo"><i class="fas fa-heartbeat"></i> HealTrack Hospitals</a>
+             <nav>
+                 <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Platform Services</a></li>
+                    <li><a href="doctors.html" class="active">Find a Doctor</a></li>
+                    <li><a href="appointment.html">Appointments</a></li>
+                    <li><a href="patient-portal-login.html">Patient Portal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-padding">
+        <h1 class="page-title"><i class="fas fa-user-md"></i> Find Your Specialist</h1>
+        <p>Search our network of expert physicians. View profiles, check credentials, see telemedicine options, read patient reviews (where available), and book online.</p>
+
+        <section id="doctor-search" class="fade-in-element">
+            <h2 class="section-title visually-hidden">Search Directory</h2>
+            <form action="#" method="get"> <!-- Action should point to backend endpoint -->
+                <div class="form-group">
+                    <label for="doc-name" class="visually-hidden">Doctor Name or Keyword</label>
+                    <input type="text" id="doc-name" name="doctor_name" placeholder="Doctor Name or Keyword">
+                </div>
+                <div class="form-group">
+                     <label for="doc-spec" class="visually-hidden">Specialty</label>
+                     <select id="doc-spec" name="specialty">
+                         <option value="">All Specialties</option>
+                         <option value="cardiology">Cardiology</option>
+                         <option value="neurology">Neurology</option>
+                         <option value="pediatrics">Pediatrics</option>
+                         <option value="oncology">Oncology</option>
+                         <option value="orthopedics">Orthopedics</option>
+                         <option value="dermatology">Dermatology</option>
+                         <!-- Removed extra specialties (Gastroenterology, Endocrinology, Pulmonology) -->
+                     </select>
+                </div>
+                 <div class="form-group">
+                    <label for="doc-avail" class="visually-hidden">Availability / Visit Type</label>
+                    <select id="doc-avail" name="availability">
+                        <option value="">Any Availability</option>
+                        <option value="telemedicine">Offers Telemedicine</option>
+                        <option value="accepting_new">Accepting New Patients</option>
+                    </select>
+                 </div>
+                <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> Search Doctors</button>
+            </form>
+        </section>
+
+        <section id="doctor-results" class="fade-in-element">
+            <h2 class="section-title">Our Specialists</h2>
+            <div class="results-grid">
+                <!-- Doctor 1 (Cardiology) -->
+                <div class="card-style doctor-profile-card">
+                     <div class="avatar-placeholder">JD</div>
+                     <h3>Dr. Jane Doe, MD, FACC</h3>
+                     <p class="doctor-specialty"><i class="fas fa-heartbeat"></i> Cardiology</p>
+                     <p><i class="fas fa-medal"></i> 15 Years Experience</p>
+                     <p class="telemed-available"><i class="fas fa-video"></i> Offers Telemedicine</p>
+                     <p class="accepting-patients"><i class="fas fa-user-plus"></i> Accepting New Patients</p>
+                     <p class="patient-rating"><i class="fas fa-star"></i> ★★★★☆ (50+ Reviews)</p>
+                     <a href="appointment.html?doctor=JaneDoe" class="btn btn-secondary btn-small">View Availability & Book <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Doctor 2 (Neurology) -->
+                <div class="card-style doctor-profile-card">
+                     <div class="avatar-placeholder">JS</div>
+                     <h3>Dr. John Smith, DO</h3>
+                     <p class="doctor-specialty"><i class="fas fa-brain"></i> Neurology</p>
+                     <p><i class="fas fa-medal"></i> 10 Years Experience</p>
+                     <p class="telemed-available"><i class="fas fa-video"></i> Offers Telemedicine</p>
+                     <p class="accepting-patients"><i class="fas fa-user-plus"></i> Accepting New Patients</p>
+                     <p class="patient-rating"><i class="fas fa-star"></i> ★★★★★ (30+ Reviews)</p>
+                     <a href="appointment.html?doctor=JohnSmith" class="btn btn-secondary btn-small">View Availability & Book <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                 <!-- Doctor 3 (Pediatrics) -->
+                 <div class="card-style doctor-profile-card">
+                    <div class="avatar-placeholder">AL</div>
+                    <h3>Dr. Anita Lee, MD, FAAP</h3>
+                     <p class="doctor-specialty"><i class="fas fa-child"></i> Pediatrics</p>
+                    <p><i class="fas fa-medal"></i> 8 Years Experience</p>
+                    <p class="telemed-none"><i class="fas fa-hospital-user"></i> In-Person Visits Only</p>
+                    <p class="accepting-patients"><i class="fas fa-user-plus"></i> Accepting New Patients</p>
+                    <p class="patient-rating"><i class="fas fa-star"></i> ★★★★★ (45+ Reviews)</p>
+                    <a href="appointment.html?doctor=AnitaLee" class="btn btn-secondary btn-small">View Availability & Book <i class="fas fa-arrow-right"></i></a>
+               </div>
+
+                <!-- Doctor 4 (Oncology) -->
+                <div class="card-style doctor-profile-card">
+                     <div class="avatar-placeholder">CW</div>
+                     <h3>Dr. Chen Wang, MD</h3>
+                     <p class="doctor-specialty"><i class="fas fa-ribbon"></i> Oncology</p>
+                     <p><i class="fas fa-medal"></i> 12 Years Experience</p>
+                     <p class="telemed-available"><i class="fas fa-video"></i> Offers Telemedicine</p>
+                     <p class="accepting-patients"><i class="fas fa-user-plus"></i> Accepting New Patients</p>
+                     <p class="patient-rating"><i class="fas fa-star"></i> ★★★★☆ (40+ Reviews)</p>
+                     <a href="appointment.html?doctor=ChenWang" class="btn btn-secondary btn-small">View Availability & Book <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Doctor 5 (Orthopedics) -->
+                <div class="card-style doctor-profile-card">
+                    <div class="avatar-placeholder">MJ</div>
+                    <h3>Dr. Marcus Jones, MD</h3>
+                    <p class="doctor-specialty"><i class="fas fa-bone"></i> Orthopedics</p>
+                    <p><i class="fas fa-medal"></i> 20 Years Experience</p>
+                    <p class="telemed-none"><i class="fas fa-hospital-user"></i> In-Person Visits Only</p>
+                    <p class="accepting-patients"><i class="fas fa-user-plus"></i> Accepting New Patients</p>
+                    <p class="patient-rating"><i class="fas fa-star"></i> ★★★★★ (60+ Reviews)</p>
+                    <a href="appointment.html?doctor=MarcusJones" class="btn btn-secondary btn-small">View Availability & Book <i class="fas fa-arrow-right"></i></a>
+               </div>
+
+                <!-- Doctor 6 (Dermatology) -->
+                <div class="card-style doctor-profile-card">
+                     <div class="avatar-placeholder">SA</div>
+                     <h3>Dr. Sarah Adams, MD</h3>
+                     <p class="doctor-specialty"><i class="fas fa-allergies"></i> Dermatology</p>
+                     <p><i class="fas fa-medal"></i> 7 Years Experience</p>
+                     <p class="telemed-available"><i class="fas fa-video"></i> Offers Telemedicine</p>
+                     <p class="accepting-patients"><i class="fas fa-user-plus"></i> Accepting New Patients</p>
+                     <p class="patient-rating"><i class="fas fa-star"></i> ★★★★☆ (35+ Reviews)</p>
+                     <a href="appointment.html?doctor=SarahAdams" class="btn btn-secondary btn-small">View Availability & Book <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Doctor 7 (Cardiology - Second) -->
+                <div class="card-style doctor-profile-card">
+                    <div class="avatar-placeholder">RG</div>
+                    <h3>Dr. Robert Garcia, MD</h3>
+                    <p class="doctor-specialty"><i class="fas fa-heartbeat"></i> Cardiology (Interventional)</p>
+                    <p><i class="fas fa-medal"></i> 18 Years Experience</p>
+                    <p class="telemed-available"><i class="fas fa-video"></i> Offers Telemedicine</p>
+                    <p class="accepting-patients"><i class="fas fa-user-plus"></i> Accepting New Patients</p>
+                    <p class="patient-rating"><i class="fas fa-star"></i> ★★★★★ (70+ Reviews)</p>
+                    <a href="appointment.html?doctor=RobertGarcia" class="btn btn-secondary btn-small">View Availability & Book <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Doctor 8 (Pediatrics - Second) -->
+                <div class="card-style doctor-profile-card">
+                     <div class="avatar-placeholder">EW</div>
+                     <h3>Dr. Emily White, DO, FAAP</h3>
+                     <p class="doctor-specialty"><i class="fas fa-child"></i> Pediatrics</p>
+                     <p><i class="fas fa-medal"></i> 5 Years Experience</p>
+                     <p class="telemed-available"><i class="fas fa-video"></i> Offers Telemedicine</p>
+                     <p class="accepting-none"><i class="fas fa-user-minus"></i> Not Accepting New Patients</p> <!-- Variation -->
+                     <p class="patient-rating"><i class="fas fa-star"></i> ★★★★★ (25+ Reviews)</p>
+                     <a href="appointment.html?doctor=EmilyWhite" class="btn btn-secondary btn-small disabled" aria-disabled="true">Book Appointment</a>
+                </div>
+
+                 <!-- Doctor 9 (Orthopedics - Second) -->
+                 <div class="card-style doctor-profile-card">
+                    <div class="avatar-placeholder">DK</div>
+                    <h3>Dr. David Kim, MD</h3>
+                    <p class="doctor-specialty"><i class="fas fa-bone"></i> Orthopedics (Sports Medicine)</p>
+                    <p><i class="fas fa-medal"></i> 11 Years Experience</p>
+                    <p class="telemed-available"><i class="fas fa-video"></i> Offers Telemedicine</p>
+                    <p class="accepting-patients"><i class="fas fa-user-plus"></i> Accepting New Patients</p>
+                    <p class="patient-rating"><i class="fas fa-star"></i> ★★★★☆ (55+ Reviews)</p>
+                    <a href="appointment.html?doctor=DavidKim" class="btn btn-secondary btn-small">View Availability & Book <i class="fas fa-arrow-right"></i></a>
+               </div>
+
+                 <!-- Doctor 10 (Dermatology - Second) -->
+                 <div class="card-style doctor-profile-card">
+                    <div class="avatar-placeholder">OB</div>
+                    <h3>Dr. Olivia Brown, MD</h3>
+                    <p class="doctor-specialty"><i class="fas fa-allergies"></i> Dermatology (Cosmetic)</p>
+                    <p><i class="fas fa-medal"></i> 9 Years Experience</p>
+                    <p class="telemed-none"><i class="fas fa-hospital-user"></i> In-Person Visits Only</p>
+                    <p class="accepting-patients"><i class="fas fa-user-plus"></i> Accepting New Patients</p>
+                    <p class="patient-rating"><i class="fas fa-star"></i> ★★★★★ (48+ Reviews)</p>
+                    <a href="appointment.html?doctor=OliviaBrown" class="btn btn-secondary btn-small">View Availability & Book <i class="fas fa-arrow-right"></i></a>
+               </div>
+
+            </div>
+            <!-- Optional message -->
+            <!-- <p style="text-align:center; margin-top: 2rem;">Displaying featured specialists. Use the search above for more options.</p> -->
+         </section>
+     </main>
+
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="insurance.html">Insurance/Billing</a> |
+            <a href="blog.html">Health Blog</a> |
+            <a href="faq.html">FAQ</a> |
+            <a href="emergency-info.html">Emergency Info</a> |
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-info">
+            © 2024 HealTrack Hospitals. All rights reserved.
+        </div>
+        <div class="footer-legal">
+             <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+     <!-- Chatbot Structure -->
+     <div id="chatbot-container">
+        <button id="chatbot-toggle" aria-label="Toggle Chatbot"></button>
+        <div id="chatbot-window" class="hidden">
+            <div id="chatbot-header">HealTrack Assistant</div>
+            <div id="chatbot-messages">
+                 <div class="bot-message">Hello! Use the search above to find a doctor, or ask me about specialties.</div>
+            </div>
+            <div id="chatbot-input">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button id="send-button" aria-label="Send Message"></button>
+            </div>
+        </div>
+    </div>
+
+     <script src="script.js"></script>
+ </body>
+ </html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthTrack Blog & News - HealTrack Hospitals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- *** ADD FONT AWESOME KIT HERE *** -->
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><i class="fas fa-heartbeat"></i> HealTrack Hospitals</a>
+            <nav>
+                <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="about.html">About Us</a></li>
+                     <li><a href="services.html">Platform Services</a></li>
+                     <li><a href="doctors.html">Find a Doctor</a></li>
+                     <li><a href="appointment.html">Appointments</a></li>
+                     <li><a href="patient-portal-login.html">Patient Portal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-padding">
+        <h1 class="page-title"><i class="fas fa-newspaper"></i> HealthTrack Blog & News</h1>
+        <p class="lead-text">Stay informed with the latest health tips, medical advancements, patient stories, and hospital updates from HealTrack Hospitals.</p>
+
+        <!-- Optional: Search/Filter Bar -->
+        <section id="blog-filter" class="styled-section fade-in-element" style="margin-bottom: 3rem;">
+             <form action="#" method="get" class="filter-form">
+                 <div class="form-group">
+                    <label for="blog_search" class="visually-hidden">Search Articles</label>
+                    <input type="search" id="blog_search" name="blog_search" placeholder="Search articles...">
+                 </div>
+                 <div class="form-group">
+                    <label for="blog_category" class="visually-hidden">Filter by Category</label>
+                    <select id="blog_category" name="blog_category">
+                        <option value="">All Categories</option>
+                        <option value="wellness">Wellness & Prevention</option>
+                        <option value="medical-info">Medical Info</option>
+                        <option value="hospital-news">Hospital News</option>
+                        <option value="technology">Healthcare Technology</option>
+                        <option value="patient-stories">Patient Stories</option>
+                    </select>
+                 </div>
+                 <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> Search</button>
+             </form>
+        </section>
+
+        <section id="blog-posts" class="fade-in-element">
+            <h2 class="section-title">Recent Articles & Updates</h2>
+            <div class="results-grid">
+                <!-- Example Blog Post Card -->
+                <article class="card-style blog-post">
+                    <div class="card-icon-top"><i class="fas fa-heart-pulse"></i></div>
+                    <h3>5 Tips for a Heart-Healthy Diet This Season</h3>
+                    <p class="post-meta"><i class="far fa-calendar-alt"></i> October 28, 2023 | <i class="fas fa-tag"></i> Wellness & Prevention</p>
+                    <p>Learn simple dietary changes you can make today to improve your cardiovascular health. Our expert dietitians share actionable advice...</p>
+                    <a href="#" class="btn btn-primary btn-small">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+                <article class="card-style blog-post">
+                     <div class="card-icon-top"><i class="fas fa-robot"></i></div>
+                    <h3>HealTrack Introduces Advanced AI for Diagnostic Imaging</h3>
+                    <p class="post-meta"><i class="far fa-calendar-alt"></i> October 25, 2023 | <i class="fas fa-tag"></i> Technology, Hospital News</p>
+                    <p>We're excited to announce the integration of a new AI platform to assist radiologists in detecting subtle anomalies in scans...</p>
+                    <a href="#" class="btn btn-primary btn-small">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+                 <article class="card-style blog-post">
+                     <div class="card-icon-top"><i class="fas fa-video"></i></div>
+                     <h3>Understanding Telemedicine: Is a Virtual Visit Right for You?</h3>
+                     <p class="post-meta"><i class="far fa-calendar-alt"></i> October 20, 2023 | <i class="fas fa-tag"></i> Medical Info, Technology</p>
+                     <p>Explore the benefits and limitations of telemedicine. Learn which conditions are commonly treated virtually and how to prepare...</p>
+                     <a href="services.html#telemedicine" class="btn btn-primary btn-small">Learn About Telemedicine <i class="fas fa-arrow-right"></i></a>
+                 </article>
+
+                 <article class="card-style blog-post">
+                    <div class="card-icon-top"><i class="fas fa-user-check"></i></div>
+                    <h3>Patient Story: Managing Diabetes with the HealTrack Portal</h3>
+                    <p class="post-meta"><i class="far fa-calendar-alt"></i> October 15, 2023 | <i class="fas fa-tag"></i> Patient Stories</p>
+                    <p>Read how Sarah L. utilized the patient portal to track her blood sugar levels, communicate with her care team, and stay motivated...</p>
+                    <a href="#" class="btn btn-primary btn-small">Read Sarah's Story <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+                 <!-- Add more articles here - dynamically loaded in a real site -->
+            </div>
+            <!-- Optional Pagination -->
+            <nav aria-label="Blog Pagination" class="pagination-nav fade-in-element">
+                <ul>
+                    <li><a href="#" class="btn btn-secondary btn-small disabled" aria-disabled="true"><i class="fas fa-chevron-left"></i> Previous</a></li>
+                    <li><a href="#" class="btn btn-outline-primary btn-small active" aria-current="page">1</a></li>
+                    <li><a href="#" class="btn btn-outline-primary btn-small">2</a></li>
+                    <li><a href="#" class="btn btn-outline-primary btn-small">3</a></li>
+                    <li><a href="#" class="btn btn-secondary btn-small">Next <i class="fas fa-chevron-right"></i></a></li>
+                </ul>
+            </nav>
+        </section>
+
+    </main>
+
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="insurance.html">Insurance/Billing</a> |
+            <a href="blog.html">Health Blog</a> |
+            <a href="faq.html">FAQ</a> |
+            <a href="emergency-info.html">Emergency Info</a> |
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-info">
+            © 2024 HealTrack Hospitals. All rights reserved.
+        </div>
+        <div class="footer-legal">
+             <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+    <!-- Chatbot Structure -->
+     <div id="chatbot-container">
+        <button id="chatbot-toggle" aria-label="Toggle Chatbot"></button>
+        <div id="chatbot-window" class="hidden">
+            <div id="chatbot-header">HealTrack Assistant</div>
+            <div id="chatbot-messages">
+                 <div class="bot-message">Looking for health articles or hospital news? Ask me about specific topics or categories!</div>
+            </div>
+            <div id="chatbot-input">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button id="send-button" aria-label="Send Message"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Consultation - HealTrack Hospitals</title>
+    <script src="https://kit.fontawesome.com/*** YOUR_KIT_CODE_HERE ***.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- No Bootstrap CSS needed if using custom styles -->
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><i class="fas fa-heartbeat"></i> HealTrack Hospitals</a>
+            <nav>
+                 <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Platform Services</a></li>
+                    <li><a href="doctors.html">Find a Doctor</a></li>
+                    <li><a href="appointment.html" class="active">Appointments</a></li>
+                    <li><a href="patient-portal-login.html">Patient Portal</a></li>
+                 </ul>
+             </nav>
+         </div>
+    </header>
+
+
+<main class="container page-padding">
+    <h1 class="page-title"><i class="fas fa-calendar-plus"></i> Schedule Your Consultation</h1>
+    <p class="lead-text">Book your appointment online <strong>anytime, anywhere</strong>. Select your preferred date, time, doctor, and visit type (In-Person or Telemedicine).</p>
+
+    <!-- Appointment Form Container -->
+    <div class="centered-form-container fade-in-element">
+        <!-- Add 'needs-validation' class for JS targeting -->
+        <!-- 'novalidate' prevents default browser validation tooltips -->
+        <form id="appointment-form" action="#" method="post" class="needs-validation" novalidate>
+             <h2 class="form-title">Appointment Details</h2>
+
+             <div class="form-group">
+                <label for="full-name"><i class="fas fa-user form-icon"></i> Full Name:</label>
+                <input type="text" id="full-name" name="full_name" required placeholder="Enter your full name">
+                <div class="invalid-feedback">Please enter your full name.</div>
+             </div>
+
+             <div class="form-group">
+                <label for="email"><i class="fas fa-envelope form-icon"></i> Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="you@example.com">
+                 <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+
+             <div class="form-group">
+                <label for="phone"><i class="fas fa-phone form-icon"></i> Phone Number (India):</label>
+                <!-- *** UPDATED FOR INDIAN FORMAT *** -->
+                <input type="tel" id="phone" name="phone" required
+                       placeholder="e.g., 9876543210 or +91 9876543210"
+                       pattern="(\+?91[\s-]?)?[6789]\d{9}"
+                       title="Enter a 10-digit Indian mobile number, optionally starting with +91">
+                <div class="invalid-feedback">Please enter a valid 10-digit Indian phone number (e.g., 9876543210, optional +91 prefix).</div>
+            </div>
+
+             <div class="form-group">
+                 <label for="pref-date"><i class="fas fa-calendar-day form-icon"></i> Preferred Date:</label>
+                 <!-- Setting min dynamically via JS -->
+                 <input type="date" id="pref-date" name="preferred_date" required>
+                 <div class="invalid-feedback">Please select a preferred date. (Cannot be in the past)</div>
+             </div>
+
+             <div class="form-group">
+                 <label for="pref-time"><i class="fas fa-clock form-icon"></i> Preferred Time Slot:</label>
+                 <select id="pref-time" name="preferred_time" required>
+                    <option value="" disabled selected>Select a time...</option>
+                    <option value="morning">Morning (9am - 12pm)</option>
+                    <option value="afternoon">Afternoon (1pm - 5pm)</option>
+                    <option value="any">Any Available</option>
+                 </select>
+                 <div class="invalid-feedback">Please select a preferred time slot.</div>
+             </div>
+
+             <div class="form-group">
+                <label for="doctor-select"><i class="fas fa-user-md form-icon"></i> Preferred Doctor/Specialty (Optional):</label>
+                <input type="text" id="doctor-select" name="preferred_doctor" placeholder="e.g., Dr. Doe or Cardiology">
+                <small>If you don't have a preference, leave blank. Use <a href="doctors.html">Find a Doctor</a> to search.</small>
+                <!-- No invalid-feedback here as it's optional -->
+             </div>
+
+             <!-- Enhanced Visit Type Selection -->
+             <div class="form-group">
+                <label id="visit-type-label"><i class="fas fa-map-marker-alt form-icon"></i> Choose Visit Type:</label>
+                 <div class="radio-group" role="group" aria-labelledby="visit-type-label">
+                     <input type="radio" id="in-person" name="appointment_type" value="in-person" required>
+                     <label for="in-person" class="inline-label radio-label">
+                         <span class="radio-icon"><i class="fas fa-hospital-alt"></i></span> In-Person Visit
+                     </label>
+                     <br>
+                     <input type="radio" id="telemedicine" name="appointment_type" value="telemedicine" required>
+                     <label for="telemedicine" class="inline-label radio-label">
+                         <span class="radio-icon"><i class="fas fa-desktop"></i></span> Telemedicine (Video Call)
+                     </label>
+                 </div>
+                 <!-- Associate feedback with the group -->
+                 <div class="invalid-feedback">Please select a visit type.</div>
+             </div>
+
+             <div class="form-group">
+                <label for="reason"><i class="fas fa-comment-medical form-icon"></i> Reason for Appointment:</label>
+                <textarea id="reason" name="reason" rows="4" required placeholder="Briefly describe the reason for your visit..."></textarea>
+                 <div class="invalid-feedback">Please provide a reason for your appointment.</div>
+             </div>
+
+            <button type="submit" class="btn btn-accent btn-lg" style="width: 100%;"><i class="fas fa-paper-plane"></i> Request Appointment</button>
+            <p class="form-note"><small><strong>Important Note:</strong> Submitting this form is a request for an appointment, not a confirmation. Our scheduling team will contact you within 1-2 business days to confirm your appointment details or suggest alternatives if your preferred time is unavailable.</small></p>
+        </form>
+    </div><!-- End Centered Form Container -->
+
+     <section class="related-info styled-section fade-in-element" style="max-width: 700px; margin: 3rem auto 0;">
+         <h3>Need Assistance or Have Questions?</h3>
+         <p><i class="fas fa-phone-alt list-icon"></i> Call Scheduling: <strong>[Scheduling Phone Number]</strong> ([Hours]).</p>
+         <p><i class="fas fa-envelope list-icon"></i> Use our <a href="contact.html">Contact Form</a> for non-urgent inquiries.</p>
+         <p><i class="fas fa-book-open list-icon"></i> Visit our <a href="blog.html">Patient Education Hub</a>.</p>
+         <p><i class="fas fa-file-invoice-dollar list-icon"></i> Billing questions? See <a href="insurance.html">Insurance & Billing</a>.</p>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="insurance.html">Insurance/Billing</a> |
+            <a href="blog.html">Health Blog</a> |
+            <a href="faq.html">FAQ</a> |
+            <a href="emergency-info.html">Emergency Info</a> |
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-info">
+            © 2024 HealTrack Hospitals. All rights reserved.
+        </div>
+        <div class="footer-legal">
+             <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+ <!-- Chatbot Structure -->
+     <div id="chatbot-container">
+        <button id="chatbot-toggle" aria-label="Toggle Chatbot"></button>
+        <div id="chatbot-window" class="hidden">
+            <div id="chatbot-header">HealTrack Assistant</div>
+            <div id="chatbot-messages">
+                 <div class="bot-message">Need help booking? Ask about doctors, visit types, or required information.</div>
+            </div>
+            <div id="chatbot-input">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button id="send-button" aria-label="Send Message"></button>
+            </div>
+        </div>
+    </div>
+
+<!-- Add the JavaScript link at the end of the body -->
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title was incorrect, corrected to Feedback -->
+    <title>Patient Feedback & Reviews - HealTrack Hospitals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">HealTrack Hospitals</div>
+            <nav>
+                 <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Platform Services</a></li>
+                    <li><a href="doctors.html">Find a Doctor</a></li>
+                    <li><a href="appointment.html">Appointments</a></li>
+                    <li><a href="patient-portal-login.html">Patient Portal</a></li>
+                    <li><a href="insurance.html">Insurance/Billing</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="emergency-info.html">Emergency</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <!-- Optional: Add explicit feedback link here if desired -->
+                    <!-- <li><a href="feedback.html" class="active">Feedback</a></li> -->
+                 </ul>
+             </nav>
+         </div>
+    </header>
+
+    <main class="container page-padding">
+        <h1>Patient Feedback & Experience</h1>
+        <p>Your feedback is invaluable and helps us continuously improve our care and services. Share your experience or read what others are saying.</p>
+
+        <section id="testimonials-feedback" class="styled-section">
+            <h2>Patient Testimonials</h2>
+            <!-- TODO: Load testimonials dynamically or add more static examples -->
+             <div class="testimonial">
+                <blockquote> <!-- Use blockquote for testimonials -->
+                    <p>"The nursing staff on the 4th floor was incredibly caring and attentive during my recovery. They made a difficult time much easier. Thank you!"</p>
+                </blockquote>
+                <cite>- M. Johnson</cite> <!-- Use cite for the source -->
+             </div>
+             <div class="testimonial">
+                <blockquote>
+                 <p>"Dr. Smith took the time to explain my diagnosis and treatment options clearly, answering all my questions patiently. I felt very informed and at ease."</p>
+                </blockquote>
+                <cite>- David K.</cite>
+             </div>
+             <div class="testimonial">
+                <blockquote>
+                 <p>"Using the online portal to view my test results saved me a phone call and was very convenient. The HealTrack platform makes managing my health simpler."</p>
+                </blockquote>
+                <cite>- Sarah L.</cite>
+             </div>
+            <p style="text-align: center; margin-top: 1rem;"><small>Testimonials represent individual experiences.</small></p>
+        </section>
+
+        <section id="rating-info">
+            <h2>Rate Your Experience</h2>
+             <!-- TODO: Specify actual survey partner -->
+             <p>We actively seek feedback to ensure we meet your expectations. After certain visits or hospital stays, you may receive a patient satisfaction survey via email or mail from our survey partner, [Survey Partner Name, e.g., Press Ganey]. We encourage you to complete these surveys honestly.</p>
+             <p>You can also provide specific feedback about doctors via our <a href="doctors.html">Find a Doctor</a> directory (rating feature may vary).</p>
+        </section>
+
+        <section id="feedback-form-section" class="centered-form-container">
+            <h2>Submit Feedback, Suggestion, or Concern</h2>
+            <p>Please use the form below to share your thoughts directly with our Patient Relations or Quality Improvement team. All submissions are reviewed carefully.</p>
+            <p><small><strong>Privacy Note:</strong> Please avoid including highly sensitive personal health details in this general form. For specific medical concerns, please contact your doctor's office directly or use the secure messaging feature in the <a href="patient-portal-login.html">Patient Portal</a>.</small></p>
+
+            <form id="feedback-form" action="#" method="post" class="needs-validation" novalidate> <!-- TODO: Add backend action URL -->
+                <div class="form-group">
+                    <label for="feedback-name">Your Name (Optional):</label>
+                    <input type="text" id="feedback-name" name="feedback_name" placeholder="Enter your name (optional)" autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="feedback-email">Your Email (Optional, for follow-up):</label>
+                    <input type="email" id="feedback-email" name="feedback_email" placeholder="you@example.com (if you'd like a response)" autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="feedback-type">Type of Feedback:</label>
+                    <select id="feedback-type" name="feedback_type" required>
+                        <option value="" disabled selected>-- Please Select --</option>
+                        <option value="compliment">Compliment / Positive Feedback</option>
+                        <option value="suggestion">Suggestion for Improvement</option>
+                        <option value="concern">Concern / Complaint</option>
+                        <option value="website_platform">Website / Portal Feedback</option>
+                        <option value="general">General Comment</option>
+                    </select>
+                    <div class="invalid-feedback">Please select the type of feedback.</div>
+                </div>
+                 <div class="form-group">
+                     <label for="feedback-department">Relevant Department/Doctor/Service (Optional):</label>
+                     <input type="text" id="feedback-department" name="feedback_department" placeholder="e.g., Cardiology, Dr. Doe, Billing, ER Visit, Website Login">
+                 </div>
+                 <div class="form-group">
+                    <label for="visit-date">Date of Visit/Experience (Approximate, Optional):</label>
+                    <input type="date" id="visit-date" name="visit_date">
+                 </div>
+                 <div class="form-group">
+                     <label for="feedback-message">Your Message:</label>
+                     <textarea id="feedback-message" name="feedback_message" rows="6" required placeholder="Please provide details about your experience or suggestion..."></textarea>
+                     <div class="invalid-feedback">Please enter your message.</div>
+                 </div>
+                 <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Submit Feedback</button>
+             </form>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="insurance.html">Insurance/Billing</a> |
+                <a href="blog.html">Health Blog</a> |
+                <a href="faq.html">FAQ</a> |
+                <a href="emergency-info.html">Emergency Info</a> |
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="footer-info">
+                © 2024 HealTrack Hospitals. All rights reserved.
+            </div>
+            <div class="footer-legal">
+                 <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Structure (Reusing improved structure) -->
+     <div id="chatbot-container">
+         <button id="chatbot-toggle" title="Chat with Assistant" aria-label="Toggle chat window"></button>
+         <div id="chatbot-window" class="hidden" role="dialog" aria-labelledby="chatbot-header" aria-modal="true">
+              <div id="chatbot-header">HealTrack Assistant</div>
+              <div id="chatbot-messages" aria-live="polite" role="log">
+                  <div class="bot-message">Hi! Want to provide feedback about your experience, share a suggestion, or read patient testimonials?</div>
+              </div>
+              <div id="chatbot-input">
+                  <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" aria-label="Your message">
+                  <button id="send-button" title="Send Message" aria-label="Send your message"></button>
+              </div>
+         </div>
+      </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
